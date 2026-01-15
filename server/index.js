@@ -79,7 +79,7 @@ if (!process.env.DBCON) {
 // ✅ MongoDB Connection
 mongoose.connect(process.env.DBCON)
     .then(() => {
-        console.log("✅ Database successfully connected");
+        console.log(" Database successfully connected");
     })
     .catch((err) => {
         console.error("❌ MongoDB connection error:", err.message);
@@ -91,5 +91,5 @@ app.use("/user", userRoute);
 
 // ✅ Server
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
+    console.log(` Server running on port ${PORT}`);
 });
